@@ -1,0 +1,590 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #ff6b00;
+}
+
+:root {
+    --laranja-base: #ff6b00;
+    --roxo-second: #9c23a6;
+}
+
+.container-grid {
+    width: 90vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+header {
+    height: 185px;
+
+    background-color: #ff6b00;
+}
+
+header .container-grid {
+    height: 100%;
+
+    background-color: #ff6b00;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 420px;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+
+    font-family: 'Orbitron';
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.container-cards {
+    width: 100%;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.carde {
+    height: 200px;
+    width: 1600px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.carde #botao1 {
+    width: 120px;
+    height: 80px;
+
+    font-size: 40px;
+
+    background-color: #B50000;
+
+    border-radius: 8px;
+}
+#botao1 p{
+    color: #FFE601;
+    font-size: 20px;
+
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao2 {
+    width: 120px;
+    height: 80px;
+
+    background-color: black;
+
+    border-radius: 8px;
+}
+#botao2 p{
+    color: #FF0000;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao3 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #2967B1;
+
+    border-radius: 8px;
+}
+#botao3 p{
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao4 {
+    width: 120px;
+    height: 80px;;
+
+    background-color: #21A9A9;
+
+    border-radius: 8px;
+}
+#botao4 p{
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao5 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #C8B505;
+
+    border-radius: 8px;
+}
+#botao5 p{
+    color: black;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao6 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #2A840A;
+
+    border-radius: 8px;
+}
+#botao6 p{
+    color: #FF0000;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao7 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #9C9C9C;
+
+    border-radius: 8px;
+}
+#botao7 p{
+    color: #000;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao8 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #2E06A2;
+
+    border-radius: 8px;
+}
+#botao8 p{
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+
+.carde #botao9 {
+    width: 120px;
+    height: 80px;
+
+    background-color: #342525;
+
+    border-radius: 8px;
+}
+#botao9 p {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 14px;
+}
+
+#inicio p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    
+    padding: 60px;
+}
+
+.sobre {
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    padding: 100px 25%;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Orbitron';
+
+    text-align: center;
+}
+#sobre p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    
+    margin-left: 40px;
+    padding: 80px;
+}
+
+#sobre {
+    text-align: center;
+    font-family: 'Orbitron';
+}
+
+.banner {
+    height: 100vh;
+    width: 1300px;
+
+    background-color: #9c23a6;
+
+    background-image: linear-gradient(90deg, rgb(105, 24, 140) 0%, rgb(105, 24, 140, 0.8) 100%), url(img/banner.svg.gami.svg);
+    background-repeat: no-repeat;
+
+    background-position: 95% 50%;
+}
+
+.conteudo-banner {
+    height: calc(100vh - 280px);
+    display: flex;
+    padding-top: 430px;
+    flex-direction: column;
+}
+
+.conteudo-banner p {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 20px;
+
+    margin-left: 30px;
+}
+
+.conteudo-banner a {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 16px;
+
+    padding-top: 320px;
+    padding-left: 10px;
+}
+
+#sobre {
+    padding: 40px;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 80px;
+}
+
+.card1 p {
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card1 img {
+    width: 320px;
+    height: 340px;
+
+    align-items: center;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 80px;
+}
+
+.card2 img {
+    width: 320px;
+    height: 340px;
+
+    align-items: center;
+}
+
+.card2 p {
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 80px;
+}
+
+.card3 img {
+    width: 320px;
+    height: 340px;
+
+    padding: 10px;
+    align-items: center;
+}
+
+.card3 p {
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    height: 380px
+}
+
+.container-grid2 {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-grid2 img {
+    height: 240px;
+}
+
+.redes img {
+    width: 70px;
+    height: 80px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+    .header {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        position: relative;
+    }
+
+    .container-grid img {
+        height: 140px;
+        width: 640px;
+    }
+
+    nav.menu a {
+        font-size: 20px;
+        height: 200px;
+        width: 250px;
+    }
+
+    .container-cards {
+        height: 220px;
+    }
+
+    .banner {
+       max-width: 1000px;
+    }
+
+    .conteudo-banner a {
+        height: 30px;
+        padding-top: 120px;
+    } 
+    #sobre {
+        height: 340px;
+        align-items: center;
+    }
+
+    .carde {
+        height: 220px;
+        width: 1000px;
+
+        justify-content: space-around;
+    }
+
+    #cases img {
+        height: 200px;
+        width: 380px;
+    }
+
+    .card1 p {
+        padding-left: 60px;
+    }
+
+    .card1 img {
+        padding-right: 80px;
+    }
+
+    .card2 p {
+        padding-right: 60px;
+    }
+
+    .card2 img {
+        padding-left: 80px;
+    }
+    .card3 p {
+        padding-left: 60px;
+    }
+
+    .card3 img {
+        padding-right: 80px;
+    }
+
+    .container-grid2 img {
+        height: 180px;
+        width: 540px;
+
+    }
+
+    .redes img {
+        width: 60px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    nav.menu a {
+        font-size: 20px;
+        width: unset;
+        margin-top: 80px;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        width: 100%;
+    }
+
+    .carde {
+        flex-basis: unset;
+    }
+
+    #inicio p {
+        font-size: 26px;
+    }
+    
+    .container-grid img {
+        height: 120px;
+    }
+
+    .banner {
+        width: 750px;
+    }
+
+    .banner p {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .card1 p {
+        padding-left: unset;
+    }
+
+    .card1 img {
+        padding-right: 80px;
+    }
+
+    .card2 p {
+        padding-right: unset;
+    }
+
+    .card2 img {
+        padding-left: 80px;
+    }
+    .card3 p {
+        padding-left: unset;
+    }
+
+    .card3 img {
+        padding-right: 80px;
+    }
+
+    footer {
+        height: 290px;
+    }
+
+    .container-grid2 img {
+        height: 140px;
+        width: 420px;
+    }
+
+    .redes img {
+        height: 70px;
+        width: 50px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container-grid img {
+        height: 68px;
+        width: 132px;
+    }
+
+    nav.menu a {
+        font-size: 14px;
+        width: unset;
+        height: 120px;
+    }
+
+    .container-cards button {
+        height: 10px;
+        width: 50px;
+    }
+
+    #inicio p {
+        font-size: 14px;
+
+        margin-top: 30px;
+        margin-left: 15px;
+        height: 80px;
+        padding: unset;
+    }
+
+    .banner {
+        width: 300px;
+        height: 240px;
+
+        background-image: unset;
+    }
+
+    .conteudo-banner p {
+        font-size: 14px;
+    }
+
+    #cases img {
+        width: 98px;
+        height: 30px;
+
+        padding: unset;
+    }
+}

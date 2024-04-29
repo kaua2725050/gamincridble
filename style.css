@@ -211,6 +211,7 @@ header img {
     background-color: #342525;
 
     border-radius: 8px;
+    margin-right: 30px;
 }
 #botao9 p {
     color: white;
@@ -289,7 +290,7 @@ h2 {
     font-family: 'Orbitron';
     font-size: 16px;
 
-    padding-top: 320px;
+    padding-top: 240px;
     padding-left: 10px;
 }
 
@@ -307,8 +308,9 @@ h2 {
 
 .card1 p {
     color: white;
-    font-size: 12px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .card1 img {
@@ -316,6 +318,7 @@ h2 {
     height: 340px;
 
     align-items: center;
+    padding: 10px;
 }
 
 .card2 {
@@ -335,7 +338,7 @@ h2 {
 
 .card2 p {
     color: white;
-    font-size: 12px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -357,7 +360,7 @@ h2 {
 
 .card3 p {
     color: white;
-    font-size: 12px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
 }
 

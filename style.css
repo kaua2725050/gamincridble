@@ -239,6 +239,7 @@ h2 {
     font-size: 40px;
     color: white;
     font-family: 'Orbitron';
+    margin-top: 15px;
 
     text-align: center;
 }
@@ -292,7 +293,7 @@ h2 {
     padding-left: 10px;
 }
 
-#sobre {
+#cases {
     padding: 40px;
 }
 
@@ -306,7 +307,7 @@ h2 {
 
 .card1 p {
     color: white;
-    font-size: 22px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -334,7 +335,7 @@ h2 {
 
 .card2 p {
     color: white;
-    font-size: 22px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -347,7 +348,7 @@ h2 {
 }
 
 .card3 img {
-    width: 320px;
+    width: 32px;
     height: 340px;
 
     padding: 10px;
@@ -356,7 +357,7 @@ h2 {
 
 .card3 p {
     color: white;
-    font-size: 22px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -545,20 +546,119 @@ footer {
 }
 
 @media screen and (max-width:320px) {
+    header {
+        height: 110px;
+    }
+
+    .container-grid {
+        height: 60px;
+
+    }
+
     .container-grid img {
-        height: 68px;
-        width: 132px;
+        height: 40px;
+        width: 130px;
     }
 
     nav.menu a {
-        font-size: 14px;
+        font-size: 12px;
         width: unset;
-        height: 120px;
+        height: 90px;
+
+        padding-top: 20px;
+        margin-top: 0px;
     }
 
-    .container-cards button {
-        height: 10px;
-        width: 50px;
+    .container-cards {
+        width: 100%;
+        height: 60px;
+
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .carde {
+        height: 40px;
+    }
+
+    .carde #botao1 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao1 p {
+        font-size: 8px;
+    }
+
+    .carde #botao2 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao2 p {
+        font-size: 8px;
+    }
+
+    .carde #botao3 {
+        height: 40px;
+        width: 70px;
+    }
+    #botao3 p {
+        font-size: 8px;
+    }
+
+    .carde #botao4 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao4 p {
+        font-size: 8px;
+    }
+
+    .carde #botao5 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao5 p {
+        font-size: 8px;
+    }
+
+    .carde #botao6 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao6 p {
+        font-size: 8px;
+    }
+
+    .carde #botao7 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao7 p {
+        font-size: 8px;
+    }
+
+    .carde #botao8 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao8 p {
+        font-size: 8px;
+    }
+
+    .carde #botao9 {
+        height: 40px;
+        width: 70px;
+    }
+
+    #botao9 p {
+        font-size: 8px;
     }
 
     #inicio p {
@@ -577,14 +677,96 @@ footer {
         background-image: unset;
     }
 
-    .conteudo-banner p {
-        font-size: 14px;
+    .conteudo-banner {
+        padding: 0;
     }
 
-    #cases img {
-        width: 98px;
-        height: 30px;
+    .banner p {
+        font-size: 10px;
+        width: 180px;
+        margin-top: 120px;
+    }
 
-        padding: unset;
+    #sobre {
+        height: 70px;
+    }
+
+    .banner a {
+        font-size: 6px;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #sobre p {
+        font-size: 10px;
+        padding: 0px;
+
+        margin-top: 17px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #cases {
+        margin-top: 30px;
+        padding: 0px;
+        height: 340px;
+    }
+
+    .card1 {
+        padding-left: 27px;
+        padding-top: 13px;
+    }
+
+    #cases .card1 img {
+        width: 90px;
+        height: 80px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+
+    .card2 {
+        padding-right: 27px;
+        padding-top: 13px;
+    }
+
+    #cases .card2 img {
+        width: 90px;
+        height: 80px;
+        padding: 0px;
+    }
+
+    .card3 {
+        padding-left: 27px;
+        padding-top: 13px;
+    }
+
+    #cases .card3 img {
+        width: 90px;
+        height: 80px;
+        padding: 0px;
+        padding-right: 10px;
+    }
+
+    footer {
+        height: 72px;
+    }
+
+    .container-grid2 img {
+        height: 40px;
+        width: 130px;
+        margin-left: 22px;
+    }
+
+    .redes img {
+        height: 22px;
+        width: 24px;
+        padding: 0px;
+        margin: 0px;
     }
 }

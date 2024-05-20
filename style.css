@@ -260,7 +260,7 @@ h2 {
 
 .banner {
     height: 100vh;
-    width: 1300px;
+    width: 1000px;
 
     background-color: #9c23a6;
 
@@ -294,7 +294,7 @@ h2 {
     padding-left: 10px;
 }
 
-#cases {
+#cases h2 {
     padding: 40px;
 }
 
@@ -391,6 +391,7 @@ footer {
 
     padding-bottom: 100px;
     margin-bottom: 100px;
+    margin-top: 42px;
 }
 
 #contato h2 {
@@ -401,7 +402,7 @@ footer {
     width: 50%;
 
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 40px, 0px;
 
     display: flex;
     flex-direction: column;
@@ -416,7 +417,7 @@ footer {
 }
 
 .contato form label {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 17px;
 
 }
@@ -424,19 +425,21 @@ footer {
 .campo {
     width: 60%;
 
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
     text-align: left;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 260px;
 }
 
 .campo input {
     height: 40px;
     color: #fff;
-    background-color: #9c23a6;
 
     border: none;
     border-radius: 4px;
@@ -452,13 +455,14 @@ footer {
 .campo-textarea {
     width: 60%;
 
-    margin-bottom: 30px;
-
     text-align: left;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 260px;
 }
 
 .campo-textarea textarea {
@@ -467,7 +471,7 @@ footer {
     border: none;
     border-radius: 4px;
 
-    padding: 10px;
+    
 
     font-family: 'Montserrant';
     font-size: 17px;
@@ -477,32 +481,19 @@ footer {
     resize: none;
 }
 
-.campo input:focus,
-.campo-textarea textarea:focus {
-    outline: 2px solid var(--laranja-gamifica);
-}
+#contato button {
+    background-color: var(--roxo-second);
+    height: 30px;
+    width: 60px;
 
-#contato form button {
-    height: 40px;
-    width: 60%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-family: 'Montserrant';
-    font-size: 17px;
-    font-weight: 600;
+    border: 0px;
 
-    color: #fff;
-
-    border: none;
     border-radius: 4px;
 
-    text-transform: uppercase;
-
-    transition: background-color;
-}
-
-#contato form input::placeholder,
-#contato form textarea::placeholder {
-    color: #ffffff;
+    margin-top: 18px;
 }
 
 #contato p {
@@ -597,9 +588,8 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    .banner img {
-        height: 40px;
-        width: 30px;
+    .header {
+        position: relative;
     }
 
     nav.menu a {
@@ -712,7 +702,105 @@ footer {
         width: 50px;
         margin: 5px;
     }
+
+    
+    #contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    margin-top: 42px;
+    }
+
+    #contato h2 {
+    margin-bottom: 70px;
+    }
+
+    #contato form {
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 40px, 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 80px;
+
+    background-color: var(--roxo-gamifica);
+
+    color: #fff;
+    font-family: 'Montserrant';
+    }
+
+    .contato form label {
+    margin-bottom: 5px;
+    font-size: 17px;
+
+    }
+
+.campo {
+    width: 60%;
+
+    margin-bottom: 48px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 160px;
 }
+
+    .campo input {
+    height: 40px;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    text-indent: 10px;
+
+    font-family: 'Montserrant';
+    font-size: 17px;
+    }
+
+    .campo-textarea {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 160px;
+    }
+
+    .campo-textarea textarea {
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    
+
+    font-family: 'Montserrant';
+    font-size: 17px;
+
+    outline: none;
+
+    resize: none;
+    }
+
+}
+
 
 @media screen and (max-width:400px) {
     header {

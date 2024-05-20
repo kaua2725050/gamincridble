@@ -1,24 +1,16 @@
 let menu = document.getElementById("menu")
 let iconeBarras = document.getElementById("menu-de-hamburguer")
 
-function abrirFecharMenu() {
-
-    if (menu.classList.contains("menu-fechado")) {
-
-        menu.classList.remove("menu-fechado")
-
-        iconeBarras.style.dsiplay = "none"
-    } else {
-        menu.classList.add("menu-fechado")
-
-        iconeBarras.style.display = "inline"
-    }
+window.onresize = () => {
+    menu.classList.remove("menu-fechado")
+    iconeX.style.display = "inline"
+    iconeBarras.style.display = "none"
 }
 
 const solicitarOrcamento = (event) => {
-    let valorNome = document.getElementById("campo-nome").value
-    let valorEmail = document.getElementById("campo-email").value
-    let valorDescricao = document.getElementById("campo-descricao").val
+    let valorNome = document.getElementById("nome").value
+    let valorEmail = document.getElementById("email").value
+    let valorDescricao = document.getElementById("descricao").val
 
     console.log("valorNome");
     console.log("valorEmail");
@@ -30,13 +22,6 @@ const solicitarOrcamento = (event) => {
         descricao: valorDescricao
     }
 
-    fetch("http://127.0.0.1:300/solicitacoes", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dadosForm)
-    })
         .then(resposta => {
             console.log(resposta)
             document.querySelector("#contato form").reset()

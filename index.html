@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gamincridble</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamincridble</title>
 
-    </head>
-    <link rel="stylesheet" href="style.css">
-    <script src="gamincridble.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
-    <body>
-        <header>
-            <div class="container-grid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
-                <img src="img/logo da gamincridble.png" alt="logo da gamincridble">
-                <nav class="menu" id="menu">
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="gamincridble.js" defer></script>
 
-                    <button>
-                        <svg id="menu-de-hamburguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                    </button>
+<body>
+    <header>
+        <div class="container-grid">
 
-                    <a href="#sobre">sobre</a>
-                    <a href="#cases">cases de sucesso</a>
-                    <a href="#contato">contato</a>
-                    
-                </nav>
+            <img src="img/logo da gamincridble.png" alt="logo da gamincridble">
+            <nav class="menu" id="menu">
+                <a href="#sobre">sobre</a>
+                <a href="#cases">cases de sucesso</a>
+                <a href="#contato">contato</a>
+            </nav>
+
+            <button onclick="abrirFecharMenu()">
+                <svg id="menu-de-hamburguer" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path 
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
                 
-            </div>
+            </button>
 
-        </header>
-
-        <div class="container-cards">
-            <div class="carde">
-                <button id="botao1"><p>ação</p></button>
-                <button id="botao2"><p>terror</p></button>
-                <button id="botao3"><p>simulação</p></button>
-                <button id="botao4"><p>aventura</p></button>
-                <button id="botao5"><p>sandbox</p></button>
-                <button id="botao6"><p>sobrevivencia</p></button>
-                <button id="botao7"><p>RPG</p></button>
-                <button id="botao8"><p>battle royale</p></button>
-                <button id="botao9"><p>roguelike</p></button>
-            </div>
         </div>
-        
-       <section id="inicio">
-        <p>A Gamincridble transforma qualquer projeto que tenha em mente em gamificado de forma prática e rápida, além de ser uma empresa segura e confiável.</p>
-    </section>     
+
+    </header>
+
+    <div class="container-cards">
+        <div class="carde">
+            <button id="botao1">
+                <p>ação</p>
+            </button>
+            <button id="botao2">
+                <p>terror</p>
+            </button>
+            <button id="botao3">
+                <p>simulação</p>
+            </button>
+            <button id="botao4">
+                <p>aventura</p>
+            </button>
+            <button id="botao5">
+                <p>sandbox</p>
+            </button>
+            <button id="botao6">
+                <p>sobrevivencia</p>
+            </button>
+            <button id="botao7">
+                <p>RPG</p>
+            </button>
+            <button id="botao8">
+                <p>battle royale</p>
+            </button>
+            <button id="botao9">
+                <p>roguelike</p>
+            </button>
+        </div>
+    </div>
+
+    <section id="inicio">
+        <p>A Gamincridble transforma qualquer projeto que tenha em mente em gamificado de forma prática e rápida, além
+            de ser uma empresa segura e confiável.</p>
+    </section>
 
     <div class="banner">
-        <div class="container-grid conteudo-banner"> 
+        <div class="container-grid conteudo-banner">
             <p>Sempre nos esforçando para produzir um game incrível.</p>
 
             <a href="portg">esse foi o nosso primeiro projeto</a>
@@ -65,34 +94,35 @@
 
     </div>
 
-    <section id="sobre"> 
+    <section id="sobre">
         <h2>Sobre nós</h2>
-        <p>Criada em 2024, desde sempre a gamincridble procura satisfazer ao máximo seus clientes, independente do objetivo que você tenha em mente, e nós juramos cuidar bem do seu projeto.</p>
-    </section> 
-  
+        <p>Criada em 2024, desde sempre a gamincridble procura satisfazer ao máximo seus clientes, independente do
+            objetivo que você tenha em mente, e nós juramos cuidar bem do seu projeto.</p>
+    </section>
+
 
     <div class="container-grid" id="cases">
         <h2>Cases de sucesso</h2>
 
-            <div class="card1">
-                <img src="img/jogo 1.png" alt="">
-                <p>Este projeto se trata de um garoto, que deve salvar seu mundo, que foi dominado pela escuridão </p>
-            </div>
-                
-                <div class="card2">
-                    <p>É um jogo de batalhas realistas com tropas de todas as eras</p>
-                    <img src="img/jogo 2.png" alt="">
-                </div>
-                
-            <div class="card3">
-                <img src="img/jogo 3.png" alt="">
-                <p>A incrível história de um macaco que teve a família sequestrada por um crocodilo do deserto</p>
-            </div>
-            
+        <div class="card1">
+            <img src="img/jogo 1.png" alt="">
+            <p>Este projeto se trata de um garoto, que deve salvar seu mundo, que foi dominado pela escuridão </p>
+        </div>
+
+        <div class="card2">
+            <p>É um jogo de batalhas realistas com tropas de todas as eras</p>
+            <img src="img/jogo 2.png" alt="">
+        </div>
+
+        <div class="card3">
+            <img src="img/jogo 3.png" alt="">
+            <p>A incrível história de um macaco que teve a família sequestrada por um crocodilo do deserto</p>
+        </div>
+
 
     </div>
 
-    <section id="contato"> 
+    <section id="contato">
         <h2>Descreva seu problema</h2>
 
         <div class="campo">
@@ -105,7 +135,8 @@
 
         <div class="campo-textarea">
             <label for="campo descricao"></label>
-            <textarea required name="" id="descricao" cols="30" rows="10" placeholder="Descreva seu problema:"></textarea>
+            <textarea required name="" id="descricao" cols="30" rows="10"
+                placeholder="Descreva seu problema:"></textarea>
         </div>
 
         <button>ENVIAR</button>
@@ -114,17 +145,17 @@
 
 
     <footer>
-            <div class="container-grid2">
-                <img src="img/logo da gamincridble.png" alt="logo-da-gamincridble">
+        <div class="container-grid2">
+            <img src="img/logo da gamincridble.png" alt="logo-da-gamincridble">
 
-                <div class="redes">
-                    <img src="img/social-facebook-svgrepo-com.svg" alt="1">
-                    <img src="img/social-instagram-svgrepo-com.svg" alt="2">
-                    <img src="img/social-whats-app-svgrepo-com.svg" alt="3">
-                    <img src="img/brand-tiktok-svgrepo-com.svg" alt="4">
-                    </div>
-
+            <div class="redes">
+                <img src="img/social-facebook-svgrepo-com.svg" alt="1">
+                <img src="img/social-instagram-svgrepo-com.svg" alt="2">
+                <img src="img/social-whats-app-svgrepo-com.svg" alt="3">
+                <img src="img/brand-tiktok-svgrepo-com.svg" alt="4">
             </div>
+
+        </div>
 
         </div>
 
